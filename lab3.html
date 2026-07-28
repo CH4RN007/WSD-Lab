@@ -14,7 +14,7 @@
                 <h1>TuneByBeats</h1>
             </div>
         </header>
-        <section>
+        <section style="padding: 20px;">
         <h1>Your next favorite song is just a click away!</h1>
         <p>Welcome to TuneByBeats!</p>
         <p>TuneByBeats is a music discovery portal where users can discover artists, albums and genres.</p>
@@ -30,29 +30,32 @@
             <li>About Us</li>
         </ol>
         </section>
-        <section>
+        <section style="padding: 20px;">
         <h1>Set up your profile!</h1>
         <p>Welcome to TuneByBeats!</p>
         <p>To get started, please fill out the form below to set up your profile.</p>
+        <div style="border:1px solid gray; padding:30px; width:400px; margin:auto;">        
         <form>
-            <label for="fname">First Name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last Name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="gender">Gender:</label><br>
+            <label for="fname" style="margin: 10px 0;">First Name:</label><br>
+            <input type="text" id="fname" name="fname" style="width:220px; height:28px;"><br>
+            <label for="lname" style="margin: 10px 0;">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" style="width:220px; height:28px;"><br>
+            <label for="email" style="margin: 10px 0;">Email:</label><br>
+            <input type="email" id="email" name="email" style="width:220px; height:28px;"><br>
+            <label for="gender" style="margin: 10px 0;">Gender:</label><br>
             <input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
+            <input type="radio" id="female" name="gender" value="female" style="margin-left:20px;">
             <label for="female">Female</label><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password"><br>
-            <input type="submit" value="Submit">
+            <label for="password" style="margin: 10px 0;">Password:</label><br>
+            <input type="password" id="password" name="password" style="width:220px; height:28px;"><br>
+            <input type="submit" value="Submit" style="margin-top:15px; padding:8px 20px;">
         </form>
+        </div>
         <h3>Awesome!!!</h3>
         <p>Now that you have set up your profile, you can start discovering new music!</p>
         <p>Let's start by selecting a few genres you like!</p>
+        <div style="border:1px solid gray; padding:30px; width:400px; margin:auto;">        
         <form>
             <input type="checkbox" id="hiphop" name="genre" value="hiphop">
             <label for="hiphop">Hip Hop</label><br>
@@ -66,11 +69,12 @@
             <label for="classical">Classical</label><br>
             <input type="checkbox" id="pop" name="genre" value="pop">
             <label for="pop">Pop</label><br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" style="margin-top:15px; padding:8px 20px;">
         </form>
+        </div>
         <h3>Great! You succesfully finished setting up your profile!</h3>
         </section>
-        <section>
+        <section style="padding: 20px;">
             <h2>Featured Playlist</h2>
             <p>Listen to this week's trending playlist!</p>
             <iframe data-testid="embed-iframe" style="border-radius:12px"

@@ -7,10 +7,10 @@
         <!-- <link rel="stylesheet" href="css/stylesheet.css"> -->
     </head>
     <body style="background-color: #f3ece4"> 
-        <header style="background: #a71f13; padding:20px; text-align:center;">
+        <header style="background: #a71f13; padding: 15px; text-align:center;">
             <div style="display:flex; align-items:center; justify-content:center;">
                 <img src="assets/Website logo.png" alt="TuneByBeats Logo"
-                    height="100px" width="100px" style="margin-right:20px;">
+                    height="90px" width="90px" style="margin-right:20px;">
                 <h1>TuneByBeats</h1>
             </div>
         </header>
@@ -37,18 +37,20 @@
         <div style="border:1px solid gray; padding:30px; width:400px; margin:auto;">        
         <form>
             <label for="fname" style="margin: 10px 0;">First Name:</label><br>
-            <input type="text" id="fname" name="fname" style="width:220px; height:28px;"><br>
+            <input type="text" id="fname" name="fname" style="width:220px; height:28px;" required><br>
             <label for="lname" style="margin: 10px 0;">Last Name:</label><br>
-            <input type="text" id="lname" name="lname" style="width:220px; height:28px;"><br>
+            <input type="text" id="lname" name="lname" style="width:220px; height:28px;" required><br>
             <label for="email" style="margin: 10px 0;">Email:</label><br>
-            <input type="email" id="email" name="email" style="width:220px; height:28px;"><br>
+            <input type="email" id="email" name="email" style="width:220px; height:28px;" required><br>
+            <label for="password" id="password" style="margin: 10px 0;">Password:</label><br>
+            <input type="password" id="password" name="password" style="width:220px; height:28px;" minlength="6" maxlength="100" required><br>
             <label for="gender" style="margin: 10px 0;">Gender:</label><br>
             <input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label>
             <input type="radio" id="female" name="gender" value="female" style="margin-left:20px;">
-            <label for="female">Female</label><br>
-            <label for="password" style="margin: 10px 0;">Password:</label><br>
-            <input type="password" id="password" name="password" style="width:220px; height:28px;"><br>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" style="margin-left:20px;">
+            <label for="other">Other</label><br>
             <input type="submit" value="Submit" style="margin-top:15px; padding:8px 20px;">
         </form>
         </div>
@@ -79,7 +81,7 @@
             <p>Listen to this week's trending playlist!</p>
             <iframe data-testid="embed-iframe" style="border-radius:12px"
                 src="https://open.spotify.com/embed/playlist/5xkBZzhIPxIQIo9rkWoypa?utm_source=generator&si=8295be1a47e94a8f"
-                width="50%" height="352" frameBorder="0" allowfullscreen=""
+                width="65%" height="352" frameBorder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 <br><br>
         </section>

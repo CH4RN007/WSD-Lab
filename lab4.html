@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TuneByBeats</title>
+        <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+    <body> 
+        <header>
+            <div id="header-content">
+                <img src="assets/Website logo.png" alt="TuneByBeats Logo"
+                    height="90px" width="90px" style="margin-right:20px;">
+                <h1 id="website-title">TuneByBeats</h1>
+            </div>
+        </header>
+        <section class="content-section">
+        <h1>Your next favorite song is just a click away!</h1>
+        <p>Welcome to TuneByBeats!</p>
+        <p>TuneByBeats is a music discovery portal where users can discover artists, albums and genres.</p>
+        <h4>Its MODULES are:</h4>
+        <ol>
+            <li>Home</li>
+            <li>Discover</li>
+            <li>Artists</li>
+            <li>Albums</li>
+            <li>Genres</li>
+            <li>Favorites</li>
+            <li>Login</li>
+            <li>About Us</li>
+        </ol>
+        </section>
+        <section class="content-section">
+        <h1>Set up your profile!</h1>
+        <p>Welcome to TuneByBeats!</p>
+        <p>To get started, please fill out the form below to set up your profile.</p>
+        <div class="profile-form">        
+        <form id="profile-form" class="boxed-form" onsubmit="return validateForm()">
+            <label for="fname" style="margin: 10px 0;">First Name:</label><br>
+            <input type="text" class="text input" id="fname" name="fname" style="width:220px; height:28px;" required><br>
+            <span id="fnameError" class="error"></span>
+            <label for="lname" style="margin: 10px 0;">Last Name:</label><br>
+            <input type="text" class="text input" id="lname" name="lname" style="width:220px; height:28px;" required><br>
+            <span id="lnameError" class="error"></span>
+            <label for="email" style="margin: 10px 0;">Email:</label><br>
+            <input type="email" class="text input" id="email" name="email" style="width:220px; height:28px;" required><br>
+            <span id="emailError" class="error"></span>
+            <label for="password" style="margin: 10px 0;">Password:</label><br>
+            <input type="password" class="text input" id="password" name="password" style="width:220px; height:28px;" minlength="6" maxlength="100" required><br>
+            <span id="passwordError" class="error"></span>
+            <label for="confirmPassword" style="margin: 10px 0;">Confirm Password:</label><br>
+            <input type="password" class="text input" id="confirmPassword" name="confirmPassword" style="width:220px; height:28px;" required><br>
+            <span id="confirmError" class="error"></span>
+            <label for="gender" style="margin: 10px 0;">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" style="margin-left:20px;" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" style="margin-left:20px;" required>
+            <label for="other">Other</label><br>
+            <span id="genderError" class="error"></span>
+            <input type="submit" value="Submit" style="margin-top:15px; padding:8px 20px;">
+        </form>
+        </div>
+        <h3>Awesome!!!</h3>
+        <p>Now that you have set up your profile, you can start discovering new music!</p>
+        <p>Let's start by selecting a few genres you like!</p>
+        <div class="genre-form">        
+        <form id="genre-form" class="boxed-form" onsubmit="return validateGenres()">
+            <input type="checkbox" id="hiphop" name="genre" value="hiphop">
+            <label for="hiphop">Hip Hop</label><br>
+            <input type="checkbox" id="rnb" name="genre" value="rnb">
+            <label for="rnb">R&B</label><br>
+            <input type="checkbox" id="rock" name="genre" value="rock">
+            <label for="rock">Rock</label><br>
+            <input type="checkbox" id="jazz" name="genre" value="jazz">
+            <label for="jazz">Jazz</label><br>
+            <input type="checkbox" id="classical" name="genre" value="classical">
+            <label for="classical">Classical</label><br>
+            <input type="checkbox" id="pop" name="genre" value="pop">
+            <label for="pop">Pop</label><br>
+            <input type="checkbox" id="edm" name="genre" value="edm">
+            <label for="edm">EDM</label><br>
+            <input type="checkbox" id="metal" name="genre" value="metal">
+            <label for="metal">Metal</label><br>
+            <span id="genreError" class="error"></span><br>
+            <input type="submit" value="Submit" style="margin-top:15px; padding:8px 20px;">
+        </form>
+        </div>
+        <h3>Great! You succesfully finished setting up your profile!</h3>
+        </section>
+        <section class="content-section">
+            <h2>Featured Playlist</h2>
+            <p>Listen to this week's trending playlist!</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/5xkBZzhIPxIQIo9rkWoypa?utm_source=generator&si=8295be1a47e94a8f"
+                width="65%" height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <br><br>
+        </section>
+        <footer>
+            <marquee direction = left>Thank you for visiting TuneByBeats!</marquee>
+            <p>&copy; 2026 TuneByBeats. All rights reserved.</p>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
